@@ -204,7 +204,7 @@
         <!-- latest portfolio section -->
 
         <section class="bg-white">
-            <div class="w-10/12 mx-auto py-24 px-3">
+            <div class="w-10/12 mx-auto py-24 md:px-3">
                 <div class="flex justify-center">
                     <div class="inline-flex px-4 py-2 mb-2 rounded-3xl bg-arrow-bg-1 gap-x-2 shadow-md ">
                         <h4><i class="fa-solid fa-arrow-right text-black "></i></h4>
@@ -241,15 +241,21 @@
 
                 <div class="pt-6">
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-y-6 md:gap-x-6">
-                        <div>
+                        <div class="hidden md:flex">
                             <div class="overflow-hidden flex justify-center p-5 border border-solid border-border-color rounded-xl bg-white shadow-sm">
                                 <img class=" object-cover border-2 border-dotted border-slate-300" src="./assets/img-3.png" alt="">
                             </div>
                         </div>
 
+                        <div class=" md:hidden">
+                            <div class="overflow-hidden flex justify-center p-5 border border-solid border-border-color rounded-xl bg-white shadow-sm">
+                                <img class=" object-cover border-2 border-dotted border-slate-300" src="./assets/img-5.png" alt="">
+                            </div>
+                        </div>
+
                         <div class="col-span-2">
-                            <div class="md:flex p-6 border border-solid border-border-color rounded-xl bg-white shadow-sm">
-                                <div class=" w-full overflow-hidden ">
+                            <div class="md:flex p-5 border border-solid border-border-color rounded-xl bg-white shadow-sm">
+                                <div class="w-full overflow-hidden ">
                                     <img class=" object-cover border-2 border-dotted border-slate-300" src="./assets/img-4.png" alt="">
                                     
                                 </div>
@@ -264,11 +270,25 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="hidden md:flex">
                             <div class="overflow-hidden flex justify-center p-5 border border-solid border-border-color rounded-xl bg-white shadow-sm">
                                 <img class=" object-cover border-2 border-dotted border-slate-300" src="./assets/img-5.png" alt="">
                             </div>
                         </div>
+
+                        <div class="md:hidden">
+                            <div class="overflow-hidden flex justify-center p-5 border border-solid border-border-color rounded-xl bg-white shadow-sm">
+                                <img class=" object-cover border-2 border-dotted border-slate-300" src="./assets/img-3.png" alt="">
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="pt-6 md:hidden">
+                    <div class="overflow-hidden flex justify-center p-5 border border-solid border-border-color rounded-xl bg-white shadow-sm">
+                        <img class=" object-cover border-2 border-dotted border-slate-300" src="./assets/img-5.png" alt="">
                     </div>
                 </div>
             </div>
@@ -276,7 +296,7 @@
 
         <!-- project section -->
 
-        <section class="project-bg border-8 border-solid border-slate-200">
+        <section class="project-bg border-8 border-solid border-slate-100">
             <div class="w-10/12 mx-auto py-20 md:py-24 px-0 md:px-24">
                 <div class="flex justify-center">
                     <div class="inline-flex px-4 py-2 mb-2 rounded-3xl bg-arrow-bg-1 gap-x-2 shadow-md ">
@@ -292,22 +312,22 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <!-- First Name -->
                             <div class="mt-4">
-                                <input type="text" id="first-name" class="mt-1 block w-full p-5 border border-solid border-border-color rounded-3xl text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-arrow-bg focus:border-transparent  bg-white" placeholder="First Name">
+                                <input type="text" id="first-name" class="mt-1 block w-full p-4 md:p-5 border border-solid border-border-color rounded-3xl text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-arrow-bg focus:border-transparent  bg-white" placeholder="First Name">
                             </div>
                             <!-- Last Name -->
                             <div class="mt-4">                              
-                                <input type="text" id="last-name" class="mt-1 block w-full p-5 border border-solid border-border-color rounded-3xl text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-arrow-bg focus:border-transparent bg-white" placeholder="Last Name">
+                                <input type="text" id="last-name" class="mt-1 block w-full p-4 md:p-5 border border-solid border-border-color rounded-3xl text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-arrow-bg focus:border-transparent bg-white" placeholder="Last Name">
                             </div>
 
                              <!-- Phone Number -->
                         <div class="mt-4">
-                            <input type="text" id="phone" class="mt-1 block w-full p-5 border border-solid border-border-color rounded-3xl text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-arrow-bg focus:border-transparent bg-white" placeholder="Phone Number">
+                            <input type="text" id="phone" class="mt-1 block w-full p-4 md:p-5 border border-solid border-border-color rounded-3xl text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-arrow-bg focus:border-transparent bg-white" placeholder="Phone Number">
                         </div>
                         
                         <!-- Email Number -->
                         <div class="mt-4">
                             
-                            <input type="text" id="email" class="mt-1 block w-full p-5 border border-solid border-border-color rounded-3xl text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-arrow-bg focus:border-transparent bg-white" placeholder="Email Number">
+                            <input type="text" id="email" class="mt-1 block w-full p-4 md:p-5 border border-solid border-border-color rounded-3xl text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-arrow-bg focus:border-transparent bg-white" placeholder="Email Number">
                         </div>
                         </div>
                         
@@ -316,7 +336,7 @@
                         <!-- Message -->
                         <div class="mt-6">
                             
-                            <textarea id="message" rows="4" class="mt-1 block w-full p-5 border border-solid border-border-color rounded-3xl text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-arrow-bg focus:border-transparent bg-white" placeholder="Write your message here"></textarea>
+                            <textarea id="message" rows="10" class="mt-1 block w-full p-4 md:p-5 border border-solid border-border-color rounded-3xl text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-arrow-bg focus:border-transparent bg-white" placeholder="Write your message here"></textarea>
                         </div>
                 
                         <!-- Submit Button -->
